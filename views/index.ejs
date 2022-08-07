@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <a href="new">Add your own Message!</a>
+    <% messages.forEach(el => { %>
+    <h2><%= el.user %></h2>
+    <h3><%= el.text %></h3>
+    <p><%= el.added %></p>
+    <% }) %>
+  </body>
+</html>
